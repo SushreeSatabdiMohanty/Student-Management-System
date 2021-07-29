@@ -47,8 +47,8 @@ def Connectdb():
 				dbroot = Toplevel()
 				dbroot.grab_set()
 				dbroot.title('Connect To DataBase')
-				# dbroot.iconbitmap('mana.ico')
-				dbroot.config(bg='blue')
+				dbroot.iconbitmap('mana.ico')
+				dbroot.config(bg='#3EDBF0')
 				dbroot.geometry('470x250+800+230')
 				dbroot.resizable(False, False)
 				# ---------------- Button of Connect DataBase   Labels -----------------------
@@ -135,8 +135,8 @@ def AddStudent():
 				addroot.geometry('450x410+230+210')
 				addroot.resizable(False, False)
 				addroot.title('Add Student')
-				# addroot.iconbitmap('mana.ico')
-				addroot.config(bg='blue')
+				addroot.iconbitmap('mana.ico')
+				addroot.config(bg='#3EDBF0')
 				addroot.grab_set()
 				
 				# --------------------       Labels       ---------------------
@@ -287,9 +287,9 @@ def SearchStudent():
 				searchroot = Toplevel()
 				searchroot.geometry('450x490+230+210')
 				searchroot.resizable(False, False)
-				searchroot.config(bg='blue')
+				searchroot.config(bg='#3EDBF0')
 				searchroot.title('Search Student')
-				# searchroot.iconbitmap('mana.ico')
+				searchroot.iconbitmap('mana.ico')
 				searchroot.grab_set()
 				
 				# --------------------       Labels       ---------------------
@@ -415,9 +415,9 @@ def UpdateStudent():
 				updateroot = Toplevel()
 				updateroot.geometry('450x500+230+210')
 				updateroot.resizable(False, False)
-				updateroot.config(bg='blue')
+				updateroot.config(bg='#3EDBF0')
 				updateroot.title('update Student')
-				# updateroot.iconbitmap('mana.ico')
+				updateroot.iconbitmap('mana.ico')
 				updateroot.grab_set()
 				
 				# --------------------       Labels       ---------------------
@@ -565,14 +565,14 @@ root = Tk()
 # ------------------------------Window Sizing------------------------------- #
 
 root.title('Student Management System')
-# root.iconbitmap('')
-root.config(bg='gold2')
+root.iconbitmap('')
+root.config(bg='sky blue')
 root.geometry('1174x700+200+70')
 root.resizable(False, False)
 
 # --------------------------Creating Frames----------------------------------#
 
-mainFrame = Frame(root, bg='gold2', borderwidth=5, relief=GROOVE)
+mainFrame = Frame(root, bg='#FE9898', borderwidth=5, relief=GROOVE)
 mainFrame.place(x=20, y=100, width=480, height=560)
 
 dataFrame = Frame(root, bg='gold2', borderwidth=5, relief=GROOVE)
@@ -580,7 +580,7 @@ dataFrame.place(x=550, y=100, width=600, height=560)
 
 # ------------------------- MainFrame Command ------------------------------------
 
-dataLabel = Label(mainFrame, text='--------------Welcome------------', bg='gold2', font='arial 16 bold')
+dataLabel = Label(mainFrame, text='--------------Welcome------------', bg='#FE9898', font='arial 16 bold')
 dataLabel.pack(side=TOP, expand=True)
 
 addbtn = Button(mainFrame, text='Add Student', font='times 14 bold', width=20, relief=RIDGE, borderwidth=4,
@@ -656,25 +656,24 @@ ShowDataFrame.pack(fill=BOTH, expand=1)
 
 # --------------------------------- Heading --------------------------------------
 
-heading1 = Label(root, text='Welcome to Student Management System', font='arial 16 bold', bg='cyan', borderwidth=4,
+heading1 = Label(root, text='Welcome to Student Management System', font='arial 16 bold', bg='#FAFF00', borderwidth=4,
                  relief=GROOVE)
 heading1.place(x=350, y=10, width=450, height=40)
 
-heading2 = Label(root, text='Trident Academy Of Technology , Bhubaneswar', font='arial 10 bold', bg='gold2')
+heading2 = Label(root, text='Trident Academy Of Technology , Bhubaneswar', font='arial 10 bold', bg='sky blue')
 heading2.place(x=350, y=50, width=450, height=40)
 
-heading3 = Label(root, text='Design and Developed by Mr. Satyabrata Ojha', font='arial 8 ', bg='gold2')
-heading3.place(x=350, y=660, width=450, height=50)
+
 
 # ---------------------------------  Date and Time ------------------------------------
 
-datetime = Label(root, font='times 14 bold', relief=RIDGE, borderwidth=4, bg='lawn green')
+datetime = Label(root, font='times 14 bold', relief=RIDGE, borderwidth=4, bg='#FE9898')
 datetime.place(x=20, y=10)
 dt()
 
 # -----------------------------   Buttons        ----------------------------------------
 
-ConnectButton = Button(root, text='Connect To Database', bg='lawn green', font='times 16 bold', relief=RIDGE,
+ConnectButton = Button(root, text='Connect To Database', bg='#FE9898', font='times 16 bold', relief=RIDGE,
                        borderwidth=4, command=Connectdb)
 
 ConnectButton.place(x=935, y=10)
